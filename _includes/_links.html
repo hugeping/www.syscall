@@ -1,0 +1,5 @@
+<div class="block" id="menu">
+  {% for link in site.links %}
+    <a class="menu" target="_top" href="{{ link.url }}">{{link.name}}</a>
+  {% endfor %}
+</div>

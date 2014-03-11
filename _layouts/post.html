@@ -1,0 +1,17 @@
+{% include _head.html %}
+{% include _header.html %}
+<main>
+<article class="post">
+  <h1><a href="{{ site.url }}{{ page.url }}" title="{{ page.title }}">{{ page.title }}</a></h1>
+  {{ content }}
+  <p class="small gray"><time datetime="{{ page.date | date: "%Y-%m-%d"}}">{{ page.date | date: "%d-%m-%Y" }}</time></p>
+</article>
+</main>
+      {% if page.share == 'y' %}
+        {% include _share.html %}
+      {% endif %}
+      {% if page.disqus == 'y' %}
+        {% include _disqus.html %}
+      {% endif %}
+
+{% include _footer.html %}

@@ -1,0 +1,23 @@
+name: SYSCALL.ru
+description: "О велосипедах"
+author: "Peter Kosyh"
+
+url: "http://syscall.ru"
+
+exclude: [README.md, Rakefile]
+paginate: 16
+disqus_shortname: syscall
+
+links:
+  - name:         Блог
+    url:          /
+  - name:         Резюме
+    url:          /about
+  - name:         INSTEAD
+    url:          http://instead.syscall.ru
+
+permalink:        pretty
+markdown:         redcarpet
+redcarpet:
+  extensions:
+    - smart
